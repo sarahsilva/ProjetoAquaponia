@@ -27,7 +27,7 @@
   		</v-toolbar>
   		<v-divider></v-divider>
   		<v-list dense class="pt-0">
-  			<v-list-tile to="/func">
+  			<v-list-tile to="/login">
   				<v-list-tile-action>
 		        	<v-icon>subject</v-icon>
 		        </v-list-tile-action>

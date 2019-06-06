@@ -3,7 +3,7 @@
         <v-toolbar flat color="white">
             <v-toolbar-title>Lista de Fotos</v-toolbar-title>
             <v-spacer></v-spacer>
-            <v-btn color="class="green darken-3 dark class="mb-2" >Adicionar Fotos</v-btn>
+            <v-btn color="green" dark class="mb-2" >Adicionar Fotos</v-btn>
         </v-toolbar>
         <v-data-table
             :headers="cabecalho"
@@ -13,7 +13,7 @@
             <template v-slot:items="props">
                 <td>{{ props.item.nome }}</td>
                 <td>{{ props.item.local }}</td>
-                <td class="justify-center layout px-0">
+                <td class="justify-center  px-0">
                     <v-icon
                         small
                         class="mr-2"
