@@ -1,27 +1,27 @@
 <template>
   <v-app>
-  	<v-toolbar class="grey darken-3" dark v-if="logado">
+  <v-toolbar class="green darken-3" dark>
   		<v-toolbar-side-icon 
   			@click.stop="drawer = !drawer"
   			color="white--text"
   		></v-toolbar-side-icon>
   		<v-spacer></v-spacer>
   		<v-toolbar-items>
-	      <v-btn flat>Marcelo</v-btn>
+	      <v-btn flat>Sabrine é CORNA</v-btn>
 	    </v-toolbar-items>
   	</v-toolbar>
   	<v-navigation-drawer 
-		class="grey darken-3"
+		class="green darken-3"
 		dark
-		fixed
+		absolute
   		v-model="drawer"
   	>
   		<v-toolbar 
-  			class="grey darken-4"
+  			class="green darken-4"
   		>
   			<v-list>
   				<v-list-tile-title class="ml-3">
-  					Barbearia
+  					Aquaponia na Escola
   				</v-list-tile-title>
   			</v-list>
   		</v-toolbar>
@@ -29,26 +29,18 @@
   		<v-list dense class="pt-0">
   			<v-list-tile to="/func">
   				<v-list-tile-action>
-		        	<v-icon>portrait</v-icon>
+		        	<v-icon>subject</v-icon>
 		        </v-list-tile-action>
 		        <v-list-tile-content>
-		          	<v-list-tile-title>Funcionários</v-list-tile-title>
+		          	<v-list-tile-title>Artigo</v-list-tile-title>
 		        </v-list-tile-content>
   			</v-list-tile>
   			<v-list-tile to="/servico">
   				<v-list-tile-action>
-		        	<v-icon>build</v-icon>
+		        	<v-icon>view_quilt</v-icon>
 		        </v-list-tile-action>
 		        <v-list-tile-content>
-		          	<v-list-tile-title>Serviços</v-list-tile-title>
-		        </v-list-tile-content>
-  			</v-list-tile>
-  			<v-list-tile to="/agenda">
-  				<v-list-tile-action>
-		        	<v-icon>today</v-icon>
-		        </v-list-tile-action>
-		        <v-list-tile-content>
-		          	<v-list-tile-title>Agenda</v-list-tile-title>
+		          	<v-list-tile-title>Fotos</v-list-tile-title>
 		        </v-list-tile-content>
   			</v-list-tile>
   			<v-list-tile to="/cliente">
@@ -56,7 +48,7 @@
 		        	<v-icon>person_outline</v-icon>
 		        </v-list-tile-action>
 		        <v-list-tile-content>
-		          	<v-list-tile-title>Cliente</v-list-tile-title>
+		          	<v-list-tile-title>Objetivos</v-list-tile-title>
 		        </v-list-tile-content>
   			</v-list-tile>
   		</v-list>
@@ -70,12 +62,8 @@
   export default {
     data () {
       return {
-				drawer: false,
-				logado: true
+        drawer: false
       }
     }
   }
 </script>
-<style>
-
-</style>

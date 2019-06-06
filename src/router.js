@@ -1,11 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Login from './views/Login.vue'
-import Cliente from './views/Cliente.vue'
-import Funcionario from './views/Funcionario.vue'
 import DemoVariaveis from './views/DemoVariaveis.vue'
-import Animes from './views/Animes.vue'
 import Produtos from './views/Produtos.vue'
+import Fotos from './views/Fotos.vue'
+import Artigos from './views/Artigos.vue'
+import Objetivos from './views/Objetivos.vue'
+import Administrador from './views/Administrador.vue'
 
 Vue.use(Router)
 
@@ -19,29 +20,35 @@ export default new Router({
       component: Login
     },
     {
-      path: '/cliente',
-      name: 'cliente',
-      component: Cliente
-    },
-    {
-      path: '/func',
-      name: 'funcionario',
-      component: Funcionario
-    },
-    {
       path: '/demo',
       name: 'Variaveis',
       component: DemoVariaveis
     },
     {
-      path: '/pacoca',
-      name: 'Animes',
-      component: Animes
-    },
-    {
       path: '/produtos',
       name: 'Produtos',
       component: Produtos
+    },
+    {
+      path: '/fotos',
+      name: 'Fotos',
+      component: Fotos
+    },
+    {
+      path: '/artigos',
+      name: 'Artigos',
+      component: Artigos
+    },
+    {
+      path: '/objetivos',
+      name: 'Objetivos',
+      component: Objetivos
+    }
+    ,
+    {
+      path: '/administrador',
+      name: 'Administrador',
+      component: Administrador
     }
   ]
 })
