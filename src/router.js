@@ -3,8 +3,8 @@ import Router from 'vue-router'
 import Login from './views/Login.vue'
 import DemoVariaveis from './views/DemoVariaveis.vue'
 import Produtos from './views/Produtos.vue'
-import Fotos from './views/Fotos.vue'
-import Artigos from './views/Artigos.vue'
+import PassoaPasso from './views/PassoaPasso.vue'
+import Producoes from './views/Producoes.vue'
 import Objetivos from './views/Objetivos.vue'
 import Administrador from './views/Administrador.vue'
 
@@ -30,14 +30,14 @@ export default new Router({
       component: Produtos
     },
     {
-      path: '/fotos',
-      name: 'Fotos',
-      component: Fotos
+      path: '/passoapasso',
+      name: 'PassoaPasso',
+      component: PassoaPasso
     },
     {
-      path: '/artigos',
-      name: 'Artigos',
-      component: Artigos
+      path: '/producoes',
+      name: 'Producoes',
+      component: Producoes
     },
     {
       path: '/objetivos',

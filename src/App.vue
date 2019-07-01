@@ -21,7 +21,7 @@
   		>
   			<v-list>
   				<v-list-tile-title class="ml-3">
-  					Aquaponia na Escola
+  					Aquaponia 
   				</v-list-tile-title>
   			</v-list>
   		</v-toolbar>
